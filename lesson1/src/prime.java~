@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class prime{
 	public static void main(String[] args){  // the only main entry, depend on class User,Tools; javac many java one;
 		User user1 = new User("I am the args for User constructor");
@@ -8,7 +9,11 @@ public class prime{
 		
 		// Promblem1: create all primes smaller than n;
 			//method1:
-			int n = 100;
+            //input
+            System.out.println("you want to get all the primes blow what?");
+            Scanner in = new Scanner(System.in);
+            int n = in.nextInt();
+            //doSomething
 			int cnt = 1;
 			System.out.println('2');
 			Maincycle:
@@ -30,7 +35,9 @@ public class prime{
 		// Promblem2: create n primes in ammount.
 			//method1:
 			//input
-			int[] array = new int[100000];
+            System.out.println("please tell us how many primes you want to get");
+            int innum = in.nextInt();
+			int[] array = new int[innum];
 			for( int i = 0; i<array.length; i++)
 			{
 				array[i]=0;
@@ -40,7 +47,7 @@ public class prime{
 			array[0]=2;
 			int cnts = 1;
 			Maincycle1:
-			for(int k=array[cnts-1]+1; cnts<100000; k+=2)
+			for(int k=array[cnts-1]+1; cnts<innum; k+=2)
 			{
 				for(int m=0; m<cnts; m++)
 				{
@@ -54,6 +61,7 @@ public class prime{
 			}
 
 			//output
+            System.out.println("here you go");
 			for( int i = 0; i<array.length; i++)
 			{
 				System.out.println(array[i]);
