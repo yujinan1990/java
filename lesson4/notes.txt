@@ -1,0 +1,3 @@
+the occasion is I changed the repository in local(create two new directory lesson2/lesson3, and push it successfuly to github, but when I pull it to the Company Computer, It failed.
+So I make a new directory lesson4 in github and then try to pull it in local. If I success, that means there must be sth wrong with Com.
+If I failed, that means pull can not fetch the new directory and merge it. I works only on files.
